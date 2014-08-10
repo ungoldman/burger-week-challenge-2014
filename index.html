@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>BURGER WEEK CHALLENGE 2014</title>
-  <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.1/normalize.css">
   <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.css">
-  <link rel="stylesheet" href="http://turbo87.github.io/leaflet-sidebar/src/L.Control.Sidebar.css">
+  <link rel="stylesheet" href="https://turbo87.github.io/leaflet-sidebar/src/L.Control.Sidebar.css">
   <style>
     #map {
       position: absolute;
@@ -14,6 +14,13 @@
       bottom: 0;
       right: 0;
       z-index: 1;
+    }
+    .burger-item {
+      clear: both;
+      overflow: hidden;
+    }
+    .burger-item img {
+      float: left;
     }
   </style>
 </head>
@@ -27,6 +34,8 @@
       <h2>EAT ALL THE BURGERS</h2>
 
       <img src="http://aht.seriouseats.com/images/2011/08/20110824-pusheen-burger.gif" alt="pusheen on a burger">
+
+      <hr>
   </div>
     <div id="map"></div>
   </div>
@@ -46,16 +55,27 @@
     });
     var geojsonLayer = L.geoJson.ajax("./burgers.geojson", {
       middleware: function (data) {
-        console.log(data);
+        var s = document.querySelector('#sidebar');
+        var u = document.createElement('ul');
+        var f = data.features;
+        for (var i in f) {
+          var props = f[i].properties;
+          var l = document.createElement('li');
+          l.classList.add('burger-item');
+          l.innerHTML = '<h1>' + props.name + '</h1>';
+          l.innerHTML += props.description;
+          u.appendChild(l);
+        }
+        s.appendChild(u);
         return data;
       },
       pointToLayer: function (featureData, latLng) {
         return L.marker(latLng, {icon: burger}).addTo(map).on('click', function () {
-            sidebar.toggle();
+          sidebar.show();
         });
       }
     });
-    var map = L.mapbox.map('map', 'saxbarm.j6gne8mm').setView(center, 12);
+    var map = L.mapbox.map('map', 'saxbarm.j6gne8mm').setView(center, 13);
     var sidebar = L.control.sidebar('sidebar', {
         closeButton: true,
         position: 'left'
