@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BURGER WEEK CHALLENGE 2014</title>
+  <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
+  <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.css">
+  <link rel="stylesheet" href="http://turbo87.github.io/leaflet-sidebar/src/L.Control.Sidebar.css">
+  <style>
+    #map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="sidebar">
+      <h1>BURGER WEEK CHALLENGE 2014</h1>
+
+      <p>Your mission, should you choose to accept it:</p>
+
+      <h2>EAT ALL THE BURGERS</h2>
+
+      <img src="http://aht.seriouseats.com/images/2011/08/20110824-pusheen-burger.gif" alt="pusheen on a burger">
+  </div>
+    <div id="map"></div>
+  </div>
+
+  <script src="https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.js"></script>
+  <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+  <script src="leaflet.ajax.min.js"></script>
+  <script src="http://turbo87.github.io/leaflet-sidebar/src/L.Control.Sidebar.js"></script>
+  <script>
+    L.mapbox.accessToken = 'pk.eyJ1Ijoic2F4YmFybSIsImEiOiJDUW0zOG1nIn0.dk3iwQP-fxClX6wk4Ol94g';
+    var center = [45.528899660111925, -122.654972076416];
+    var burger = L.icon({
+        iconUrl: 'http://fc08.deviantart.net/fs71/f/2010/114/3/1/Floating_Burger___free_icon_by_serapixels.gif',
+
+        iconSize: [50, 50],
+        iconAnchor: [25, 25]
+    });
+    var geojsonLayer = L.geoJson.ajax("./burgers.geojson", {
+      middleware: function (data) {
+        console.log(data);
+        return data;
+      },
+      pointToLayer: function (featureData, latLng) {
+        return L.marker(latLng, {icon: burger}).addTo(map).on('click', function () {
+            sidebar.toggle();
+        });
+      }
+    });
+    var map = L.mapbox.map('map', 'saxbarm.j6gne8mm').setView(center, 12);
+    var sidebar = L.control.sidebar('sidebar', {
+        closeButton: true,
+        position: 'left'
+    });
+
+    map.addControl(sidebar);
+    geojsonLayer.addTo(map);
+
+    setTimeout(function () {
+      sidebar.show();
+    }, 500);
+  </script>
+</body>
+</html>

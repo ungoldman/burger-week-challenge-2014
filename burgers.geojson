@@ -1,0 +1,320 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.64023350749,
+                    45.522670112384,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Ate-Oh-Ate",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-445-6101</div><p><a href=\"http://www.ate-oh-ate.com/\">http://www.ate-oh-ate.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s14.postimg.org/xxw2b04nx/ate_oh_ate1.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.67583209857,
+                    45.551445895091,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Bar Bar",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-288-3895</div><p><a href=\"http://www.mississippistudios.com/bar-bar/\">http://www.mississippistudios.com/bar-bar/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s30.postimg.org/9n9v05xct/barbar1.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.65835361063,
+                    45.523414947722,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Burnside Brewing Co.",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-946-8151</div><p><a href=\"http://www.burnsidebrewco.com/\">http://www.burnsidebrewco.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s10.postimg.org/xzy7e9i51/burnside_brewing1000.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.644682037,
+                    45.52676520624,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Club 21",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-235-5690</div><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s9.postimg.org/71e0j66iz/club_21_1.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.64534200379,
+                    45.504836502121,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Double Barrel Tavern",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-234-1420</div><p><a href=\"https://www.facebook.com/doublebarrelpdx\">https://www.facebook.com/doublebarrelpdx</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s21.postimg.org/sze5i4yk3/double_barrel_burnin_love1000.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.65680389461,
+                    45.522661558806,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Doug Fir Lounge",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-231-9663</div><p><a href=\"http://www.dougfirlounge.com/\">http://www.dougfirlounge.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s28.postimg.org/oouzjk8gp/dougfir1000web.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.60755051811,
+                    45.495176454896,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Foster Burger",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-775-2077</div><p><a href=\"http://fosterburger.com/\">http://fosterburger.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s12.postimg.org/lbz8x6fh5/foster_burger1000.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.68681120565,
+                    45.562579011151,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "The Hop & Vine",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-954-3322</div><div><span class=\"l\">Notes:</span>&nbsp;**offer begins at 3pm</div><p><a href=\"http://thehopandvine.com/\">http://thehopandvine.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s22.postimg.org/gkiu1h6vh/hop_and_vine1000.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.67512688357,
+                    45.523675834941,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mi Mero Mole",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;971-266-8575</div><div><span class=\"l\">Notes:</span>&nbsp;**only at NW location, ** offer begins at 2pm</div><p><a href=\"http://mmmtacospdx.com/\">http://mmmtacospdx.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s29.postimg.org/uhb4x5k1f/mi_mero_mole_burger.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.67525399142,
+                    45.55022748338,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "North Light",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-477-7079</div><p><a href=\"http://www.northlightpdx.com/\">http://www.northlightpdx.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s10.postimg.org/ybouiidcl/north_light_sliced_1000.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6762730308,
+                    45.519473186314,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rialto",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-228-7605</div><p><a href=\"http://rialtopoolroom.com/\">http://rialtopoolroom.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s10.postimg.org/uurdta3o5/rialto1000.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.62898373529,
+                    45.516691084113,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rockin' Robyn's Sassy Burger",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-957-0335</div><div><span class=\"l\">Notes:</span>&nbsp;**Cart</div><p><a href=\"http://rockinrobynssassyburger.com/\">http://rockinrobynssassyburger.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s8.postimg.org/3lu2n2qu9/robyn_basket.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.64165027486,
+                    45.526700554707,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Slowburger",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-477-5779</div><p><a href=\"http://slowburger.net/\">http://slowburger.net/</a></p>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.66103585377,
+                    45.518788691739,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Slow Bar",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-230-7767</div><p><a href=\"http://slowbar.net/home\">http://slowbar.net/home</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s28.postimg.org/slvqvmtax/slow_bar.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.61568473885,
+                    45.548370714508,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Smallwares",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;971-229-0995</div><p><a href=\"http://www.smallwarespdx.com/\">http://www.smallwarespdx.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s21.postimg.org/j9zyd2goj/smallwares_burger.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.66135766541,
+                    45.526751000308,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Spirit of 77",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-232-9977</div><div><span class=\"l\">Notes:</span>&nbsp;**Veggie Burger!</div><p><a href=\"http://www.spiritof77bar.com/\">http://www.spiritof77bar.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s27.postimg.org/9zjc6pda7/spirit_of_77_1000.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.63768442336,
+                    45.559203129952,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "The Station",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-284-4491</div><p><a href=\"http://stationpdx.com/\">http://stationpdx.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s15.postimg.org/68djcecmf/the_station_web.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6847838644,
+                    45.525086047667,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Tilt",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-894-9528</div><p><a href=\"http://tiltitup.com/\">http://tiltitup.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s12.postimg.org/5hoy11g49/tilt1000_burger.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.70241272207,
+                    45.559336075758,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Tilt",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-285-8458</div><p><a href=\"http://tiltitup.com/\">http://tiltitup.com/</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s12.postimg.org/5hoy11g49/tilt1000_burger.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.65799160734,
+                    45.513470860586,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "White Owl Social Club",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-236-9672</div><div><span class=\"l\">Notes:</span>&nbsp;**Veggie Burger!</div><p><a href=\"http://www.whiteowlsocialclub.com\">http://www.whiteowlsocialclub.com</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s27.postimg.org/zasn0yb9b/white_owl1000.jpg\" />"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.67640038612,
+                    45.541211708776,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Widmer Brothers Pub",
+                "description": "<div><span class=\"l\">Phone:</span>&nbsp;503-281-3333</div><div><span class=\"l\">Notes:</span>&nbsp;**offer begins at 2pm</div><p><a href=\"http://widmerbrothers.com/brewery/#the-widmer-brothers-pub\">http://widmerbrothers.com/brewery/#the-widmer-brothers-pub</a></p><img border=0 class=\"tabIMG\" align=\"right\" src=\"http://s23.postimg.org/efz8yy7pj/widmer_1000web.jpg\" />"
+            }
+        }
+    ]
+}
