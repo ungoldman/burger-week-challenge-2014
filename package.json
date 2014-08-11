@@ -1,0 +1,26 @@
+{
+  "name": "burger-week-challenge-2014",
+  "version": "1.0.0",
+  "description": "BURGERWEEK",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngoldman/burger-week-challenge-2014.git"
+  },
+  "keywords": [
+    "burger",
+    "week",
+    "challenge",
+    "2014"
+  ],
+  "author": "Nate Goldman <nate@ngoldman.me>",
+  "contributors": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngoldman/burger-week-challenge-2014/issues"
+  },
+  "homepage": "https://github.com/ngoldman/burger-week-challenge-2014"
+}
