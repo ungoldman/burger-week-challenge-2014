@@ -17,7 +17,10 @@
     "2014"
   ],
   "author": "Nate Goldman <nate@ngoldman.me>",
-  "contributors": [],
+  "contributors": [
+    "Nikolas Wise <nikolaswise@gmail.com>",
+    "Mele Sax-Barnett"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ngoldman/burger-week-challenge-2014/issues"

@@ -24,6 +24,11 @@ Can it be done? Should it be? Will you join me in this impossible dream?
 
 ![](http://aht.seriouseats.com/images/2011/08/20110824-pusheen-burger.gif)
 
+## Contributors
+
+* [Mele Sax-Barnett](http://pdxmele.com/) created the most excellent burger map.
+* [Nik Wise](https://github.com/nikolaswise) provided the superb bouncy burger icon.
+
 ## Attribution
 
 All burger data for this project has been aggregated from the Portland Mercury's article, ["The Five Commandments of BURGER WEEK"](http://www.portlandmercury.com/portland/the-five-commandments-of-burger-week/Content?oid=13213589)... FOR EDUCATIONAL PURPOSES ONLY.
