@@ -8,7 +8,7 @@ THERE WILL BE A RECKONING
 
 ### The Challenge
 
-I put forth a challenge to the city of Portland. Will you join me in attempting to eat every single one of the culinary delights put forth by our fair city's burger purveyors for the time-honored BURGER WEEK tradition?
+I put forth a challenge to the city of Portland. Will you join me in attempting to eat every single one of the culinary delights offered up by our fair city's burger purveyors for the time-honored BURGER WEEK tradition?
 
 ### The Rules
 
