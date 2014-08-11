@@ -6,7 +6,8 @@ var burger = L.icon({
   iconUrl: '/BurgerBounce.gif',
 
   iconSize: [32, 40],
-  iconAnchor: [16, 20]
+  iconAnchor: [16, 20],
+  popupAnchor: [0, -16]
 });
 
 var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
