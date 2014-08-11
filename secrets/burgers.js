@@ -18,7 +18,6 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
     u.classList.add('burger-list');
     for (var i in f) {
       var props = f[i].properties;
-      console.log(props);
       var l = document.createElement('li');
       l.classList.add('burger-item');
       l.innerHTML = '<h1>' + props.name + ' @ ' + '<a href="' + props.url + '">' + props.provider + '</a>' + '</h1>';
