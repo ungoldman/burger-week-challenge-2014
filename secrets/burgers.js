@@ -12,10 +12,9 @@ var burger = L.icon({
 
 var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
   middleware: function (data) {
-    var s = document.querySelector('#sidebar');
+    var s = document.querySelector('.burger-list');
     var u = document.createElement('ul');
     var f = data.features;
-    u.classList.add('burger-list');
     for (var i in f) {
       var props = f[i].properties;
       var l = document.createElement('li');
@@ -26,7 +25,7 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
       l.innerHTML += '<p class="burger-desc">' + props.description + '</p>';
       u.appendChild(l);
     }
-    s.appendChild(u);
+    s.innerHTML = u.innerHTML;
     return data;
   },
   pointToLayer: function (featureData, latLng) {
