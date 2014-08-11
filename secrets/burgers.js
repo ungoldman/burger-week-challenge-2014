@@ -3,7 +3,7 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoic2F4YmFybSIsImEiOiJDUW0zOG1nIn0.dk3iwQP-fxClX
 var center = [45.528899660111925, -122.654972076416];
 
 var burger = L.icon({
-  iconUrl: './BurgerBounce.gif',
+  iconUrl: './secrets/burger.gif',
 
   iconSize: [32, 40],
   iconAnchor: [16, 20],
