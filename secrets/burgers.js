@@ -23,7 +23,7 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
       l.innerHTML = '<h1>' + props.name + ' @ ' + '<a href="' + props.url + '">' + props.provider + '</a>' + '</h1>';
       l.innerHTML += '<p><small>' + props.address + ', ' + props.hours + '</small></p>';
       l.innerHTML += '<img src="' + props.image + '">';
-      l.innerHTML += '<p>' + props.description + '</p>';
+      l.innerHTML += '<p class="burger-desc">' + props.description + '</p>';
       u.appendChild(l);
     }
     s.appendChild(u);
@@ -50,7 +50,7 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
 var map = L.mapbox.map('map', 'saxbarm.j6gne8mm').setView(center, 13);
 
 var sidebar = L.control.sidebar('sidebar', {
-  closeButton: true,
+  closeButton: false,
   position: 'left'
 });
 
