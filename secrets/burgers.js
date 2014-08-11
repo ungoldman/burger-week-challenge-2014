@@ -3,10 +3,10 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoic2F4YmFybSIsImEiOiJDUW0zOG1nIn0.dk3iwQP-fxClX
 var center = [45.528899660111925, -122.654972076416];
 
 var burger = L.icon({
-  iconUrl: 'http://fc08.deviantart.net/fs71/f/2010/114/3/1/Floating_Burger___free_icon_by_serapixels.gif',
+  iconUrl: '/BurgerBounce.gif',
 
-  iconSize: [50, 50],
-  iconAnchor: [25, 25]
+  iconSize: [32, 40],
+  iconAnchor: [16, 20]
 });
 
 var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
@@ -17,6 +17,7 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
     u.classList.add('burger-list');
     for (var i in f) {
       var props = f[i].properties;
+      console.log(props);
       var l = document.createElement('li');
       l.classList.add('burger-item');
       l.innerHTML = '<h1>' + props.name + ' @ ' + '<a href="' + props.url + '">' + props.provider + '</a>' + '</h1>';
