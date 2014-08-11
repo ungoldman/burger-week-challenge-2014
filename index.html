@@ -15,27 +15,60 @@
       right: 0;
       z-index: 1;
     }
-    .burger-item {
+    #sidebar.loading {
+      display: none;
+    }
+    #sidebar .burger-list {
+      padding: 0;
+    }
+    #sidebar .burger-item {
       clear: both;
       overflow: hidden;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #ccc;
     }
-    .burger-item img {
+    #sidebar .burger-item:last-child {
+      border-bottom: 0;
+    }
+    #sidebar .burger-item img {
       float: left;
+      margin: 0 15px 15px 0;
     }
   </style>
 </head>
 <body>
-  <div id="sidebar">
-    <h1>BURGER WEEK CHALLENGE 2014</h1>
-    <h2>7 Days, 21 Burgers</h2>
-    <p>Can it be done? Should it be? Will you join me in this impossible dream?</p>
-    <img src="http://aht.seriouseats.com/images/2011/08/20110824-pusheen-burger.gif" alt="pusheen on a burger">
+  <div id="sidebar" class="loading">
+    <header>
+      <h1>BURGER WEEK CHALLENGE 2014</h1>
+      <h2>7 Days, 19 Burgers</h2>
+    </header>
+
+    <h3>The Challenge</h3>
+
+    <p>I put forth a challenge to the city of Portland. Will you join me in attempting to eat every single one of the culinary delights put forth by our fair city's burger purveyors for the time-honored BURGER WEEK tradition?</p>
+
+    <h3>The Rules</h3>
+
+    <p>By my calculations there are a total of 21 burgers listed. TWO of them are duplicates, as both Tilt and Slow Bar have submitted the same burger for their respective eastside and westside locations. This means that to complete the challenge you must eat all 19 UNIQUE burger entries. Eating all 21 would only be necessary as a bonus round if there needs to be a tie breaker. To summarize:</p>
+
+    <ol>
+      <li>Eat All 19 Unique Burgers on the list</li>
+      <li>Complete the challenge before closing time on Sunday, August 17th</li>
+      <li>The challenge begins Monday, August 11th</li>
+    </ol>
+
+    <footer>
+      <p>Can it be done? Should it be? Will you join me in this impossible dream?</p>
+      <img src="http://aht.seriouseats.com/images/2011/08/20110824-pusheen-burger.gif" alt="pusheen on a burger">
+    </footer>
+
     <hr>
   </div>
+
   <div id="map"></div>
 
   <script src="https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.js"></script>
-  <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
   <script src="secrets/leaflet.ajax.min.js"></script>
   <script src="secrets/L.Control.Sidebar.js"></script>
   <script src="secrets/burgers.js"></script>

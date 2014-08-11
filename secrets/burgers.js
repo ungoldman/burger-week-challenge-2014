@@ -14,21 +14,35 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
     var s = document.querySelector('#sidebar');
     var u = document.createElement('ul');
     var f = data.features;
+    u.classList.add('burger-list');
     for (var i in f) {
       var props = f[i].properties;
       var l = document.createElement('li');
       l.classList.add('burger-item');
-      l.innerHTML = '<h1>' + props.name + '</h1>';
-      l.innerHTML += props.description;
+      l.innerHTML = '<h1>' + props.name + ' @ ' + '<a href="' + props.url + '">' + props.provider + '</a>' + '</h1>';
+      l.innerHTML += '<p><small>' + props.address + ', ' + props.hours + '</small></p>';
+      l.innerHTML += '<img src="' + props.image + '">';
+      l.innerHTML += '<p>' + props.description + '</p>';
       u.appendChild(l);
     }
     s.appendChild(u);
     return data;
   },
   pointToLayer: function (featureData, latLng) {
-    return L.marker(latLng, {icon: burger}).addTo(map).on('click', function () {
-      sidebar.show();
+    var props = featureData.properties;
+    var c = document.createElement('div');
+    c.classList.add('burger-popup');
+    c.innerHTML = '<h1>' + props.name + ' @ ' + '<a href="' + props.url + '">' + props.provider + '</a>' + '</h1>';
+    c.innerHTML += '<img src="' + props.image + '">';
+    c.innerHTML += '<p><small>' + props.address + ', ' + props.hours + '</small></p>';
+
+    var layer = L.marker(latLng, {icon: burger});
+    layer.addTo(map).bindPopup(c, {
+      maxWidth: 170,
+      minWidth: 170
     });
+
+    return layer;
   }
 });
 
@@ -43,5 +57,6 @@ map.addControl(sidebar);
 geojsonLayer.addTo(map);
 
 setTimeout(function () {
+  document.querySelector('#sidebar').classList.remove('loading');
   sidebar.show();
 }, 500);
