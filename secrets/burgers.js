@@ -49,7 +49,7 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
 var map = L.mapbox.map('map', 'saxbarm.j6gne8mm').setView(center, 13);
 
 var sidebar = L.control.sidebar('sidebar', {
-  closeButton: false,
+  closeButton: true,
   position: 'left'
 });
 
