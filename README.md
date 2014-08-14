@@ -27,7 +27,7 @@ Can it be done? Should it be? Will you join me in this impossible dream?
 ## Contributors
 
 * [Mele Sax-Barnett](http://pdxmele.com/) created the most excellent [burger basemap](https://a.tiles.mapbox.com/v4/saxbarm.j6gne8mm/page.html?access_token=pk.eyJ1Ijoic2F4YmFybSIsImEiOiJDUW0zOG1nIn0.dk3iwQP-fxClX6wk4Ol94g#14/45.5222/-122.6680).
-* [Nik Wise](https://github.com/nikolaswise) provided the superb bouncy burger icon.
+* [Nik Wise](https://github.com/nikolaswise) crafted the superb [bouncy burger icon](./secrets/burger.gif).
 
 ## Attribution
 
