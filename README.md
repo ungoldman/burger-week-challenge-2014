@@ -16,13 +16,15 @@ By my calculations there are a total of 21 burgers listed. TWO of them are dupli
 
 1. Eat All 19 Unique Burgers on the list
 1. Document your eatings to provide evidence of challenge completion
-1. Bring a witness for companionship
+1. You must finish every burger
+1. No barfing
 1. Complete the challenge before closing time on Sunday, August 17th
-1. The challenge begins Monday, August 11th
 
 Can it be done? Should it be? Will you join me in this impossible dream?
 
 ![](http://aht.seriouseats.com/images/2011/08/20110824-pusheen-burger.gif)
+
+The challenge begins Monday, August 11th. We suggest bringing a witness for authenticity and companionship.
 
 ## Contributors
 
