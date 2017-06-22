@@ -1,16 +1,11 @@
-L.mapbox.accessToken = 'pk.eyJ1Ijoic2F4YmFybSIsImEiOiJDUW0zOG1nIn0.dk3iwQP-fxClX6wk4Ol94g';
-
-var center = [45.528899660111925, -122.654972076416];
-
-var burger = L.icon({
+var burgerIcon = L.icon({
   iconUrl: './secrets/burger.gif',
-
   iconSize: [32, 40],
   iconAnchor: [16, 20],
   popupAnchor: [0, -16]
 });
 
-var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
+var burgerLayer = L.geoJson.ajax('./secrets/burgers.geojson', {
   middleware: function (data) {
     var s = document.querySelector('.burger-list');
     var f = data.features;
@@ -34,7 +29,7 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
     c.innerHTML += '<img src="' + props.image + '">';
     c.innerHTML += '<p><small>' + props.address + ', ' + props.hours + '</small></p>';
 
-    var layer = L.marker(latLng, {icon: burger});
+    var layer = L.marker(latLng, { icon: burgerIcon });
     layer.addTo(map).bindPopup(c, {
       maxWidth: 170,
       minWidth: 170
@@ -44,7 +39,18 @@ var geojsonLayer = L.geoJson.ajax("./secrets/burgers.geojson", {
   }
 });
 
-var map = L.mapbox.map('map', 'saxbarm.j6gne8mm').setView(center, 13);
+var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png', {
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+  subdomains: 'abcd',
+  maxZoom: 19
+});
+
+var map = L.map('map', {
+  center: [45.528899660111925, -122.654972076416],
+  zoom: 13,
+  maxZoom: 18,
+  layers: [basemap, burgerLayer]
+});
 
 var sidebar = L.control.sidebar('sidebar', {
   closeButton: true,
@@ -52,7 +58,6 @@ var sidebar = L.control.sidebar('sidebar', {
 });
 
 map.addControl(sidebar);
-geojsonLayer.addTo(map);
 
 setTimeout(function () {
   document.querySelector('#sidebar').classList.remove('loading');
