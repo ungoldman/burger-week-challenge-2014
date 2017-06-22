@@ -5,17 +5,14 @@
   <title>BURGER WEEK CHALLENGE 2014</title>
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.1/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
-    integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
-    crossorigin="">
-  <link rel="stylesheet" href="secrets/L.Control.Sidebar.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-sidebar@0.1.9/src/L.Control.Sidebar.css">
   <style>
     #map {
       position: absolute;
       top: 0;
-      left: 0;
       bottom: 0;
-      right: 0;
+      width: 100%;
       z-index: 1;
     }
     #sidebar header h1 {
@@ -26,12 +23,8 @@
       font-size: 18px;
       margin-bottom: 24px;
     }
-    #sidebar.loading {
-      display: none;
-    }
-    #sidebar .burger-list {
-      padding: 0;
-    }
+    #sidebar.loading { display: none }
+    #sidebar .burger-list { padding: 0 }
     #sidebar .burger-item {
       clear: both;
       overflow: hidden;
@@ -39,16 +32,12 @@
       margin-bottom: 24px;
       border-bottom: 1px solid #ccc;
     }
-    #sidebar .burger-desc {
-      padding-left: 165px;
-    }
+    #sidebar .burger-desc { padding-left: 165px }
     #sidebar .burger-item img {
       float: left;
       margin: 0 15px 15px 0;
     }
-    #sidebar img {
-      max-width: 100%;
-    }
+    #sidebar img { max-width: 100% }
     @media (max-width: 767px) {
       .github-fork-btn { display: none; }
     }
@@ -105,11 +94,9 @@
 
   <a class="github-fork-btn" href="https://github.com/ngoldman/burger-week-challenge-2014"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a>
 
-  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
-   integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
-   crossorigin=""></script>
-  <script src="secrets/leaflet.ajax.min.js"></script>
-  <script src="secrets/L.Control.Sidebar.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-ajax@2.1.0/dist/leaflet.ajax.min.js"></script>
+  <script src="https://unpkg.com/leaflet-sidebar@0.1.9/src/L.Control.Sidebar.js"></script>
   <script src="secrets/burgers.js"></script>
 </body>
 </html>
