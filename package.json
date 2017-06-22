@@ -1,29 +1,32 @@
 {
   "name": "burger-week-challenge-2014",
-  "version": "1.0.0",
   "description": "BURGER WEEK CHALLENGE 2014",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "python -m SimpleHTTPServer"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ngoldman/burger-week-challenge-2014.git"
-  },
-  "keywords": [
-    "burger",
-    "week",
-    "challenge",
-    "2014"
-  ],
+  "version": "1.0.0",
   "author": "Nate Goldman <nate@ngoldman.me>",
+  "bugs": {
+    "url": "https://github.com/ngoldman/burger-week-challenge-2014/issues"
+  },
   "contributors": [
     "Nikolas Wise <nikolaswise@gmail.com>",
     "Mele Sax-Barnett"
   ],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ngoldman/burger-week-challenge-2014/issues"
+  "devDependencies": {
+    "standard": "^10.0.2"
   },
-  "homepage": "https://github.com/ngoldman/burger-week-challenge-2014"
+  "homepage": "https://github.com/ngoldman/burger-week-challenge-2014",
+  "keywords": [
+    "2014",
+    "burger",
+    "challenge",
+    "week"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngoldman/burger-week-challenge-2014.git"
+  },
+  "scripts": {
+    "start": "python -m SimpleHTTPServer",
+    "test": "standard"
+  }
 }
